@@ -23,6 +23,7 @@ class ReCaptchaV2 extends BaseReCaptcha
 {
     protected $googleRecaptchaResponseData;
 
+    /** @var \ReCaptcha\Response $verify */
     protected $verify;
 
     /**
@@ -88,13 +89,38 @@ class ReCaptchaV2 extends BaseReCaptcha
     public function verifyReCaptcha()
     {
         if (isset($this->config['status']) && $this->config['status'] === true) {
-            $remoteIp           = getIPAddress();
-            $secret             = $this->config['secret_key']; // chính là mã secret key Google cung cấp
-            $gRecaptchaResponse = $this->googleRecaptchaResponseData;
-            $recaptcha          = new ReCaptcha($secret); // Load thư viện
-            $this->verify       = $recaptcha->verify($gRecaptchaResponse, $remoteIp);
+            $remoteIp     = getIPAddress();
+            $secret       = $this->config['secret_key']; // chính là mã secret key Google cung cấp
+            $recaptcha    = new ReCaptcha($secret); // Load thư viện
+            $this->verify = $recaptcha->verify($this->googleRecaptchaResponseData, $remoteIp);
         }
 
         return $this;
+    }
+
+    /**
+     * Function verifyStatus
+     *
+     * @return bool
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
+     * @time     : 10/05/2021 56:40
+     */
+    public function verifyStatus()
+    {
+        return $this->verify->isSuccess();
+    }
+
+    /**
+     * Function verifyErrorCodes
+     *
+     * @return array
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
+     * @time     : 10/05/2021 56:43
+     */
+    public function verifyErrorCodes()
+    {
+        return $this->verify->getErrorCodes();
     }
 }
