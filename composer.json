@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "nguyenanhung\\Libraries\\GoogleReCaptcha\\": "src/"
+            "nguyenanhung\\Libraries\\Google\\ReCAPTCHA\\": "src/"
         },
         "files": [
             "helpers/helpers.php"
