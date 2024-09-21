@@ -1,4 +1,9 @@
-[![Latest Stable Version](http://poser.pugx.org/nguyenanhung/google-recaptcha-helper/v)](https://packagist.org/packages/nguyenanhung/google-recaptcha-helper) [![Total Downloads](http://poser.pugx.org/nguyenanhung/google-recaptcha-helper/downloads)](https://packagist.org/packages/nguyenanhung/google-recaptcha-helper) [![Latest Unstable Version](http://poser.pugx.org/nguyenanhung/google-recaptcha-helper/v/unstable)](https://packagist.org/packages/nguyenanhung/google-recaptcha-helper) [![License](http://poser.pugx.org/nguyenanhung/google-recaptcha-helper/license)](https://packagist.org/packages/nguyenanhung/google-recaptcha-helper) [![PHP Version Require](http://poser.pugx.org/nguyenanhung/google-recaptcha-helper/require/php)](https://packagist.org/packages/nguyenanhung/google-recaptcha-helper)
+[![Latest Stable Version](https://img.shields.io/packagist/v/nguyenanhung/google-recaptcha-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/google-recaptcha-helper)
+[![Total Downloads](https://img.shields.io/packagist/dt/nguyenanhung/google-recaptcha-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/google-recaptcha-helper)
+[![Daily Downloads](https://img.shields.io/packagist/dd/nguyenanhung/google-recaptcha-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/google-recaptcha-helper)
+[![Monthly Downloads](https://img.shields.io/packagist/dm/nguyenanhung/google-recaptcha-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/google-recaptcha-helper)
+[![License](https://img.shields.io/packagist/l/nguyenanhung/google-recaptcha-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/google-recaptcha-helper)
+[![PHP Version Require](https://img.shields.io/packagist/dependency-v/nguyenanhung/google-recaptcha-helper/php)](https://packagist.org/packages/nguyenanhung/google-recaptcha-helper)
 
 # Google reCAPTCHA Helper
 
